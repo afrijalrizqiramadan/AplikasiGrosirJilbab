@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_16sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_16sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Penting!"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            style="@style/DPSubHeading"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Setelah checkout silahkan konfirmasi admin untuk proses selanjutnya, jika ingin dibatalkan silahkan hubungi admin"
+            android:textSize="@dimen/_14sdp" />
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Upload Gambar"-->
+<!--            android:background="@color/graybutton"-->
+<!--            android:layout_gravity="center"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btApply"
+                style="@style/DPButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Konfirmasi Admin"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/btHome"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Kembali ke Beranda"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/textprimary"
+                android:background="@drawable/inputbg"
+                android:layout_marginLeft="@dimen/_5sdp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

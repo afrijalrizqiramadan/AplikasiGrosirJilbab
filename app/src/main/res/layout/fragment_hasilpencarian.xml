@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybackground"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/panelList"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/graybackground"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dp_margin20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_margin10"
+                style="@style/textbold"
+                android:textSize="@dimen/dp_font_size_normal"
+                android:text="Hasil Pencarian Produk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_margin10"
+                android:id="@+id/tvJumlahProduk"
+                android:text="Ditemukan 100 Produk"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:id="@+id/btShare"-->
+
+            <!--                android:gravity="center"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:paddingHorizontal="@dimen/dp_margin20">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="19dp"-->
+            <!--                    android:layout_height="@dimen/sizeicon"-->
+            <!--                    android:src="@drawable/icon_share" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:textSize="@dimen/dp_font_size_medium"-->
+            <!--                    android:textColor="@color/blackgray"-->
+            <!--                    android:text="Bagikan"/>-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/btUrutkan"
+
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_margin20">
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="@dimen/sizeicon"
+                    android:src="@drawable/icon_urutkan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp_font_size_medium"
+                    android:textColor="@color/blackgray"
+                    android:text="Urutkan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/btFilter"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_margin20">
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="@dimen/sizeicon"
+                    android:src="@drawable/icon_filter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackgray"
+                    android:textSize="@dimen/dp_font_size_medium"
+                    android:text="Filter" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graybackground" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/graybackground"
+            android:id="@+id/rvHasilPencarian" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/graybackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:id="@+id/panelKosong"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingHorizontal="@dimen/dp_margin20">
+
+        <ImageView
+            android:layout_marginTop="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gambar_pencariangagal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_margin10"
+            style="@style/textbold"
+            android:textSize="@dimen/dp_font_size_normal"
+            android:text="Hasil Pencarian Produk Brand.." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_margin10"
+            android:gravity="center"
+            android:text="Tidak Ada satupun yang cocok dengan kata kunci tersebut. Coba kata kunci lain" />
+    </LinearLayout>
+</LinearLayout>

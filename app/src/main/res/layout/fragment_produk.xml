@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/mainbackground"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/panelList"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:paddingHorizontal="@dimen/dp_margin20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin10"
+                    style="@style/textbold"
+                    android:textSize="@dimen/dp_font_size_normal"
+                    android:text="Assalamualikum" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_margin10"
+                    style="@style/textbold"
+                    android:textSize="@dimen/dp_font_size_normal"
+                    android:text="Bismillah, Semoga Berkah" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btKeranjang"
+                android:layout_width="25dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_shopping_cart_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/mainbackground"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:id="@+id/btShare"-->
+
+            <!--                android:gravity="center"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:paddingHorizontal="@dimen/dp_margin20">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="19dp"-->
+            <!--                    android:layout_height="@dimen/sizeicon"-->
+            <!--                    android:src="@drawable/icon_share" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:textSize="@dimen/dp_font_size_medium"-->
+            <!--                    android:textColor="@color/blackgray"-->
+            <!--                    android:text="Bagikan"/>-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/btUrutkan"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/inputbg"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:paddingHorizontal="@dimen/dp_margin20">
+
+                <EditText
+                    android:id="@+id/etCari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="cari produk" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/sizeicon"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:src="@drawable/ic_baseline_search" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center"
+                android:id="@+id/btFilter"
+                android:orientation="horizontal"
+                android:background="@drawable/inputbg">
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="@dimen/sizeicon"
+                    android:src="@drawable/icon_filter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackgray"
+                    android:textSize="@dimen/dp_font_size_medium"
+                    android:text="Filter" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mainbackground" />
+
+        <FrameLayout
+            android:id="@+id/frameshimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_20sdp">
+            <include layout="@layout/shimmer_produk" />
+        </FrameLayout>
+        <LinearLayout
+            android:background="@color/mainbackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:id="@+id/panelKosong"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingHorizontal="@dimen/dp_margin20">
+
+            <ImageView
+                android:layout_marginTop="180dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gambar_pencariangagal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_margin10"
+                style="@style/textbold"
+                android:textSize="@dimen/dp_font_size_normal"
+                android:text="Hasil Pencarian Produk Brand.." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_margin10"
+                android:gravity="center"
+                android:text="Tidak Ada satupun yang cocok dengan kata kunci tersebut. Coba kata kunci lain" />
+        </LinearLayout>
+        <FrameLayout
+            android:background="@color/mainbackground"
+            android:id="@+id/framemain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+
+            android:id="@+id/rvProduk" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_add" />
+</FrameLayout>

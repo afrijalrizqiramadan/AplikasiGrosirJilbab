@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_produk">
+
+    <fragment
+        android:id="@+id/navigation_transaksi"
+        android:name="com.asyabab.egj.ui.fragment.TransaksiFragment"
+        android:label="@string/title_transaksi"
+        tools:layout="@layout/fragment_transaksi" />
+
+    <fragment
+        android:id="@+id/navigation_produk"
+        android:name="com.asyabab.egj.ui.fragment.ProdukFragment"
+        android:label="@string/title_produk"
+        tools:layout="@layout/fragment_produk" />
+
+    <fragment
+        android:id="@+id/navigation_profil"
+        android:name="com.asyabab.egj.ui.fragment.ProfilFragment"
+        android:label="@string/title_profil"
+        tools:layout="@layout/fragment_profil" />
+</navigation>

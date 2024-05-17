@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_220sdp"
+                android:background="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/shimmering_background" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:id="@+id/stvNama"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_below="@id/stvNama"
+                        android:id="@+id/stvHarga"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tvNama"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+
+                    <View
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/btIconFavorit"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/shimmering_background" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_220sdp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/shimmering_background" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:id="@+id/stvNama2"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_below="@id/stvNama2"
+                        android:id="@+id/stvHarga2"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+
+                    <View
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/shimmering_background" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_220sdp"
+                android:background="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/shimmering_background" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:id="@+id/stvNama1"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_below="@id/stvNama1"
+                        android:id="@+id/stvHarga1"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tvNama2"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+
+                    <View
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/btIconFavorit2"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/shimmering_background" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_220sdp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/shimmering_background" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:id="@+id/stvNama4"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_below="@id/stvNama4"
+                        android:id="@+id/stvHarga4"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+
+                    <View
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/shimmering_background" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

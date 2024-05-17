@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputbg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputbg"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginLeft="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:id="@+id/tv_isian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/tvRincianProdukNama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pognae Orga Plus+ Hipseat Baby Carrier..."
+                        android:textColor="@color/blackgray"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRincianProdukKeterangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvRincianProdukNama"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="PINK, L"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvRincianProdukHarga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvRincianProdukKeterangan"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/white"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Rp.2.700.000"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvRincianProdukJumlah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+
+                        android:text="1x"
+                        android:textColor="@color/blackgray"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

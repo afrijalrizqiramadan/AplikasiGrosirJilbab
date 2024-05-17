@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainbackground"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white">
+        <ImageView
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_margin20"
+            android:src="@drawable/arrowleft" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:text="Tambah Produk"
+            android:textColor="@color/textprimary"
+            android:fontFamily="@font/semibold"
+            android:textAppearance="@style/DPtitletoolbar" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_30sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_113sdp"
+                    android:background="@drawable/inputbg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btTambahGambar"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_tambah" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/regular"
+                        android:text="Tambah Gambar"
+                        android:textColor="@color/textreguler"
+                        android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvGambarProduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/inputNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/inputbg"
+                        android:fontFamily="@font/regular"
+                        android:gravity="center_vertical"
+                        android:hint="Nama Produk"
+                        android:padding="@dimen/_15sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/inputRincian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/inputbg"
+                        android:fontFamily="@font/regular"
+                        android:hint="Rincian produk"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/_15sdp"
+                        android:singleLine="false"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inputKategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/inputbg">
+
+                    <TextView
+                        android:id="@+id/tvKategori"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/regular"
+                        android:gravity="center_vertical"
+                        android:hint="Kategori"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inputVarian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/inputbg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/regular"
+                        android:gravity="center_vertical"
+                        android:hint="Varian"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inputStokHarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/inputbg">
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/regular"
+                        android:gravity="center_vertical"
+                        android:hint="Stok dan Harga"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/arrowright" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btTambah"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/bg_button"
+                    android:fontFamily="@font/medium"
+                    android:text="Tambah"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:fontFamily="@font/medium"
+                    android:text="Perbarui"
+                    android:background="@color/colorPrimary"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

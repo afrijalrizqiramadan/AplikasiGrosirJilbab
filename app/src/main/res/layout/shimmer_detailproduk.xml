@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@id/toolbar">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:visibility="gone"
+            android:background="@color/shimmering_background" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <View
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@color/shimmering_background" />
+
+                        <View
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/viewFav"
+                            android:background="@color/shimmering_background" />
+
+                        <View
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_toLeftOf="@id/viewFav"
+                            android:background="@color/shimmering_background" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/shimmering_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp"
+                android:background="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <View
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_below="@id/stvNama"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="@dimen/_100sdp"
+                        android:id="@+id/stvNama"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/dp_margin10"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@color/shimmering_background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

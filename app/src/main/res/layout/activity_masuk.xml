@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/mainbackground"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/content_area"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textColor="@color/mainbackground"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:background="@color/failed"
+                android:id="@+id/tvGagalMasuk" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk"
+                    android:textColor="@color/blackgray"
+                    android:textSize="24dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/tv_masuk"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_sizeinputandbutton"
+                    android:layout_below="@+id/tv_masuk"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/inputbg"
+                    android:id="@+id/inputUsername"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:hint="Masukkan Username" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_sizeinputandbutton"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_below="@+id/inputEmail"
+                    android:id="@+id/inputPassword"
+                    android:background="@drawable/inputbg"
+                    android:hint="Kata Sandi"
+                    android:inputType="textPassword" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_sizeinputandbutton"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_roundblue"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/btMasuk"
+                    android:text="Masuk" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

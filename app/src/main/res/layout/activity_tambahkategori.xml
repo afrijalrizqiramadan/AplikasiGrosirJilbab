@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainbackground"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainbackground"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_margin20"
+            android:src="@drawable/arrowleft" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:text="Kategori"
+            android:textAppearance="@style/DPtitletoolbar" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvKategori"/>
+
+                <Button
+                    android:id="@+id/btTambahKategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Tambah"
+                    android:textSize="@dimen/_14sdp"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:fontFamily="@font/medium"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+

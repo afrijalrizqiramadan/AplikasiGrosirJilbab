@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/mainbackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/content_area"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_20sdp">
+
+            <TextView
+
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Daftar"
+                android:textColor="@color/blackgray"
+                android:textSize="24dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/iconProfil"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_125sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:src="@drawable/ic_tambah" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/inputJenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/inputbg"
+                    android:paddingHorizontal="@dimen/_10sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_bottom" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/inputNama"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_sizeinputandbutton"
+                android:layout_below="@+id/inputUsername"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/inputbg"
+                android:hint="Nama"
+                android:paddingLeft="10dp" />
+            <EditText
+                android:id="@+id/inputNohp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_sizeinputandbutton"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/inputbg"
+                android:hint="No Hp"
+                android:paddingLeft="10dp" />
+            <EditText
+                android:id="@+id/inputAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_sizeinputandbutton"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/inputbg"
+                android:hint="Alamat"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/inputUsername"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_sizeinputandbutton"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/inputbg"
+                android:hint="Username"
+                android:digits="_,qwertzuiopasdfghjklyxcvbnm,0123456789"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_sizeinputandbutton"
+                android:layout_below="@+id/inputEmail"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/inputbg"
+                android:hint="Kata sandi"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <EditText
+
+                android:id="@+id/inputPasswordUlang"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_sizeinputandbutton"
+                android:layout_below="@+id/inputPassword"
+                android:background="@drawable/inputbg"
+                android:hint="Ketik ulang kata sandi"
+                android:inputType="textPassword"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:paddingLeft="10dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:minHeight="?attr/actionBarSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    app:titleTextColor="@android:color/white"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:id="@+id/btHapus"
+                        android:gravity="center_vertical"
+                        android:background="@color/red"
+                        android:paddingHorizontal="@dimen/dp_margin20"
+                        android:paddingVertical="@dimen/dp_margin5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:text="HAPUS" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Tambah"
+                        android:id="@+id/btDaftar"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

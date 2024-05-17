@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/tvGambarPopUp"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/contohgambar4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:paddingHorizontal="@dimen/_14sdp"
+        android:textColor="@color/blackgray"
+        android:id="@+id/tvNamaPopUp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Promo untuk Semua Produk Ibu dan Anak" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/tvKeteranganPopUp"
+        android:paddingHorizontal="@dimen/_14sdp"
+        android:textColor="@color/blackgray"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Promo untuk Semua Produk Ibu dan Anak" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/graybackground" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Keluar"
+        android:id="@+id/btKeluar"
+        style="@style/btred" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_105sdp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/tvFavoritGambar"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/contohgambar1" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvFavoritNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Pognae Orga Plus+ Hipseat Baby Carrier..."
+                    android:textColor="@color/blackgray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.2.650.000"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvKeteranganPromo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp.2.700.000"
+                        android:background="@drawable/strikin"
+                        android:foreground="@drawable/strikin"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="invisible"
+                        android:textColor="@color/graytxt" />
+
+                    <TextView
+                        android:id="@+id/tvKeterangan"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@id/tvKeteranganPromo"
+                        android:layout_height="wrap_content"
+                        android:text=" Diskon 20%"
+                        android:visibility="invisible"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/graytxt" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btFavoritHapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/icon_close" />
+
+    </RelativeLayout>
+</LinearLayout><!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/graybackground"/>-->

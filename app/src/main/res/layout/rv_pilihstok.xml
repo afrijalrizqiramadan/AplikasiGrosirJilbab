@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/inputbg"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_5sdp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbItem"
+            android:layout_gravity="center_vertical"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_margin10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/inputbg"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tvPilihWarna"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvKeranjangNama"
+                    android:layout_gravity="center_vertical"
+                    android:text="Biru"
+                    android:textColor="@color/graytxt"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvPilihUkuran"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvKeranjangNama"
+                    android:layout_gravity="center_vertical"
+                    android:text="L"
+                    android:textColor="@color/graytxt"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/inputbg"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingVertical="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/tvPilihHarga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/blackgray"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tvPilihStok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+
+                <Button
+                    android:id="@+id/btMin"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/graybutton"
+                    android:text="-"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/tvQty"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/white"
+                    android:text="1"
+                    android:singleLine="true"
+                    android:inputType="numberSigned"
+                    android:gravity="center"
+                    android:textColor="@color/blackgray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btPlus"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/graybutton"
+                    android:text="+"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/graybackground"/>-->
+</LinearLayout>

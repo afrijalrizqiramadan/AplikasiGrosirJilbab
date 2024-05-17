@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Reseller EGJ</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="privacy_pra">Privacy Practices\\u000D\\nUpdated Terms &amp; Conditions\\u000D\\nHelp Center | FAQ | Use of Cookies\\u000D\\n3rd Party Library Info
+</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="email_anda_tidak_terdaftar">Email anda tidak terdaftar</string>
+    <string name="dengan_masuk">Dengan masuk, Anda setuju dengan Syarat &amp; Ketentuan Endora, Program Arbitrase dan Praktik Kerahasiaan</string>
+    <string name="dengan_daftar">Dengan menekan daftar, Anda setuju dengan Syarat &amp; Ketentuan Endora, Program Arbitrase dan Praktik Kerahasiaan.</string>
+    <string name="title_activity_home">home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="dp_font_bold">dpfonts/robotobold.ttf</string>
+    <string name="dp_font_medium">dpfonts/robotomedium.ttf</string>
+    <string name="dp_font_regular">dpfonts/robotoregular.ttf</string>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_favorit">Favorit</string>
+    <string name="jangan_khawatir">Jangan khawatir. Cukup masukkan alamat email Anda di bawah ini dan kami akan mengirimkan tautan ke email Anda untuk membuat sandi baru. \\n\\n  Jika Anda tidak segera menerima email, coba periksa folder spam atau sampah Anda. </string>
+    <string name="masukkan">Masukkan kata sandi baru anda</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="title_activity_pembelian">Pembelian</string>
+    <string name="tab_text_1">Pengiriman</string>
+    <string name="tab_text_2">Selesai</string>
+    <string name="tab_text_3">Pengembalian</string>
+    <string name="username">Username</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="verifikasi_kata_sandi">Verifikasi kata sandi</string>
+    <string name="email">Email</string>
+    <string name="simpan_perubahan">Simpan Perubahan</string>
+    <string name="verifikasi_kata_sandi_lama">Verifikasi kata sandi lama</string>
+    <string name="kata_sandi_lama">Kata sandi lama</string>
+    <string name="utama_rumah">[Utama] Rumah</string>
+    <string name="title_activity_pencarian">Pencarian</string>
+    <string name="title_activity_beranda">Beranda</string>
+    <string name="warning">Peringatan</string>
+    <string name="y">Ya</string>
+    <string name="btl">Batal</string>
+    <string name="untuk_bantuan">Untuk bantuan lebih cepat, tolong sertakan nomor pesanan Anda jika ada.</string>
+    <string name="kami_siap_menjawab_pertanyaan_anda_dan_mendengarkan_tanggapan_anda">Kami siap menjawab pertanyaan Anda dan mendengarkan tanggapan Anda</string>
+    <string name="masuk_dulu">Masuk dahulu untuk akses laman ini</string>
+    <string name="tas_belanja">+ Tas Belanja</string>
+    <string name="ubah_kata_sandi">Ubah Kata Sandi</string>
+    <string name="kata_sandi_baru">Kata sandi baru</string>
+    <string name="ketik_ulang_sandi_baru">Ketik ulang sandi baru</string>
+    <string name="facebook_app_id">137577524527924</string>
+    <string name="fb_login_protocol_scheme">fb137577524527924</string>
+
+    <string name="title_transaksi">Transaksi</string>
+    <string name="title_produk">Produk</string>
+    <string name="title_profil">Profil</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Pilih Gambar</string>
+    <string name="lbl_take_camera_picture">Ambil dari Kamera</string>
+    <string name="lbl_choose_from_gallery">Pilih dari Galeri</string>
+    <string name="toast_image_intent_null">Gagal mengambil</string>
+    <string name="dialog_permission_title">Izin Aplikasi</string>
+    <string name="dialog_permission_message">Aplikasi ini membeutuhan izin untuk menggunakan fitur ini</string>
+    <string name="go_to_settings">Pergi ke Pengaturan</string>
+</resources>

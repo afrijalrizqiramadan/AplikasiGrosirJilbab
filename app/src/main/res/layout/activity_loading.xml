@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_100sdp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reseller App\nEndah Grosil Jilbab"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bold"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

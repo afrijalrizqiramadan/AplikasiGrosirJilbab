@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "614407742736",
+    "firebase_url": "https://endoracare.firebaseio.com",
+    "project_id": "endoracare",
+    "storage_bucket": "endoracare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614407742736:android:132491e524c1b0b10eb195",
+        "android_client_info": {
+          "package_name": "com.asyabab.egj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614407742736-hqtlpn8qfrhsjb8aremub4b8ksgj3k4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Ie4FpG27ohHAo1A88j6YGC6aYv_aCPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614407742736-hqtlpn8qfrhsjb8aremub4b8ksgj3k4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

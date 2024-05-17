@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/mainbackground"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainbackground"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_margin20"
+            android:src="@drawable/arrowleft" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:text="Variasi"
+            android:textAppearance="@style/DPtitletoolbar" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:id="@+id/content_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warna" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWarna"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputWarna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/font"
+                    android:gravity="center_vertical"
+                    android:hint="Masukkan Warna"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <Button
+                    android:id="@+id/btTambahWarna"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/medium"
+                    android:text="Tambah Warna"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ukuran" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvUkuran"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/inputUkuran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/font"
+                        android:gravity="center_vertical"
+                        android:hint="Masukkan Ukuran"
+                        android:padding="@dimen/_15sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Button
+                        android:id="@+id/btTambahUkuran"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/medium"
+                        android:text="Tambah Ukuran"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btSelesai"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/medium"
+                    android:text="Selesai"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

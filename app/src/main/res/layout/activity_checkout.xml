@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbackground"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainbackground"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/arrowleft" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:text="Checkout"
+            android:textAppearance="@style/DPtitletoolbar"
+            android:textSize="@dimen/_14sdp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/mainbackground"
+        android:layout_marginBottom="@dimen/_40sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainbackground"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTasBelanja"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mainbackground"
+                android:layout_marginBottom="@dimen/dp_margin10" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_margin10"
+                android:background="@color/mainbackground"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp_margin20">
+
+                <TextView
+                    android:id="@+id/tvEstimasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_16sdp"
+                    android:text="Estimasi 6-7 hari"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_margin20"
+                android:layout_marginVertical="@dimen/dp_margin10"
+                android:text="Catatan"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:id="@+id/catatanTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_46sdp"
+                android:background="@color/mainbackground"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dp_margin20">
+
+                <EditText
+                    android:id="@+id/inputCatatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/textprimary"
+                    android:textSize="@dimen/_16sdp" />
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_margin20"
+                android:layout_marginVertical="@dimen/dp_margin10"
+                android:text="Metode Pembayaran"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:id="@+id/rlPayment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_46sdp"
+                android:background="@color/mainbackground"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dp_margin20">
+
+                <Spinner
+                    android:id="@+id/inputPembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/inputbg"
+                    android:paddingHorizontal="@dimen/_10sdp"
+
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_bottom" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            app:titleTextColor="@android:color/white"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dp_margin20"
+                android:paddingVertical="@dimen/dp_margin5">
+
+                <TextView
+                    android:id="@+id/subtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sub Total" />
+
+                <TextView
+                    android:id="@+id/tv_subtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subtotal"
+                    android:gravity="center"
+                    android:text="Rp. 0"
+                    android:textAppearance="@style/textbold"
+                    android:textSize="@dimen/dp_font_size_medium" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btBayar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Bayar"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

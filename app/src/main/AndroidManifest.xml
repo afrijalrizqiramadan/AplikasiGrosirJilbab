@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.asyabab.egj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.asyabab.egj.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_new_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_new_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/DPAppWhite"
+        tools:targetApi="q">
+        <activity android:name="com.asyabab.egj.ui.activity.MetodePembayaranActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.asyabab.egj.ui.activity.pilihproduk.DetailProdukActivity"
+            android:exported="true">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="www.endoracare.com"
+                    android:pathPrefix="/product"
+                    android:scheme="https" />
+                <!-- <data android:scheme="app" android:host="com.asyabab.endora" android:pathPrefix="/product"/> -->
+            </intent-filter>
+        </activity>
+        <activity android:name="com.asyabab.egj.ui.activity.DaftarActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.cart.TasBelanjaActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.FinalPembayaranActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.tambahproduk.TambahHargaStokActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.tambahproduk.TambahKategoriActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.tambahproduk.TambahProdukActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.tambahproduk.TambahVariasiActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.RincianSelesaiActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.RincianBelumBayarActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.RincianDibatalkanActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.ui.activity.RincianDikirimActivity"
+            android:exported="false"/>
+        <activity android:name="com.asyabab.egj.utils.ImagePickerActivity"
+            android:exported="false" />
+        <activity android:name="com.asyabab.egj.ui.activity.CheckoutActivity"
+            android:exported="false" />
+        <activity android:name="com.asyabab.egj.ui.activity.CheckoutLangsungActivity"
+            android:exported="false" />
+        <activity android:name="com.asyabab.egj.ui.activity.CaraPembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.asyabab.egj.ui.activity.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:theme="@style/DPAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name="com.asyabab.egj.data.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAjH-rHGUnw04tILgTcEmeCFggx5uYy7mY" />
+    </application>
+
+</manifest>

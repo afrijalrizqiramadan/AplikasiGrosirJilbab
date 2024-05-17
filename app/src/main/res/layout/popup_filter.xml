@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Urutkan"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textAllCaps="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graybackground" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:text="Berdasarkan Harga"
+            android:textSize="@dimen/_12sdp"
+            style="@style/textbold"
+            android:gravity="center_vertical"
+            android:textColor="@color/blackgray"
+            android:id="@+id/radioBtn1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graybackground" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="MIN"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/inputMin"
+            android:background="@drawable/bg_stroke"
+
+            />
+
+        <View
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="@color/graybackground" />
+
+        <EditText
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="MAX"
+            android:inputType="number"
+            android:gravity="center"
+            android:id="@+id/inputMax"
+            android:background="@drawable/bg_stroke" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/graybackground" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:text="Atur Ulang"
+            android:layout_weight="1"
+            android:id="@+id/btAturUlang"
+            style="@style/btblack" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:text="Terapkan"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/btTerapkan"
+            style="@style/btblack" />
+
+    </LinearLayout>
+
+</LinearLayout>

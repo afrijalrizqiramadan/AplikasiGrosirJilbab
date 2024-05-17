@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/panelBackground"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_nopesanan"
+                    android:textColor="@color/blackgray"
+                    android:text="No. Pesanan"/>
+
+                <TextView
+                    android:id="@+id/tvNoPesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/tv_nopesanan"
+                    android:text="#12345678"
+                    android:textColor="@color/blackgray" />
+
+                <TextView
+                    android:id="@+id/tvNamaBarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_nopesanan"
+                    android:fontFamily="@font/bold"
+                    android:text="139 832 038 012 380"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/tvVarianBarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNamaBarang"
+                    android:text="Rincian" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVarianBarang"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvHargaTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rincian" />
+                    <TextView
+                        android:id="@+id/tvCaraPembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rincian" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arrowright"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/graybackground"/>
+
+</LinearLayout>

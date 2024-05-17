@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PembelianActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_margin20"
+            android:src="@drawable/arrowleft" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:text="Cara Pembayaran"
+            android:textAppearance="@style/DPtitletoolbar" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dp_margin20"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@color/white"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:padding="@dimen/_10sdp">-->
+
+            <!--                <TextView-->
+            <!--                    style="@style/textbold"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Pembayaran melalui ATM BCA" />-->
+            <!--                -->
+            <!--            </LinearLayout>-->
+
+            <com.riyagayasen.easyaccordion.AccordionView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:isAnimated="false"
+                app:heading="Pembayaran melalui ATM BCA"
+                app:isExpanded="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Masukkan kartu ATM BC dan PIN ATM BCA Anda" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Pilih menu “TRANSAKSI LAINNYA" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Pilih menu “TRANSFER" />
+
+                </LinearLayout>
+
+            </com.riyagayasen.easyaccordion.AccordionView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tv_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Total Pembayaran" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_subtotal"
+                android:gravity="center"
+                android:text="Rp.2.684.000"
+                android:textAppearance="@style/textbold"
+                android:textSize="@dimen/dp_font_size_medium" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Pembayaran"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_margin20"
+            android:id="@+id/btBack"
+            android:src="@drawable/arrowleft" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:text="Tas Belanja"
+            android:textAppearance="@style/DPtitletoolbar" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@+id/panelUp"
+        android:layout_below="@id/toolbar"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/cbAll"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@id/cbAll"
+            android:text="Pilih Semua"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvJumlahItem"
+            android:layout_alignParentRight="true"
+            android:text="Item Anda (0)" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameshimmer"
+        android:layout_below="@id/panelUp"
+        android:visibility="visible">
+
+        <include layout="@layout/shimmer_tasbelanja" />
+    </FrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/panelUp"
+        android:id="@+id/swipeResfresh">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/framemain"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+
+                    android:id="@+id/rvTasBelanja" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/panelKosong"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                  android:paddingHorizontal="@dimen/dp_margin20">
+
+                <ImageView
+                    android:layout_marginTop="180dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logotidakditemukan"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    style="@style/textbold"
+                    android:textSize="@dimen/dp_font_size_normal"
+                    android:text="Keranjang Belanja Kosong" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:id="@+id/panelBottom"
+            android:visibility="invisible"
+            app:titleTextColor="@android:color/white"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dp_margin20"
+                android:paddingVertical="@dimen/dp_margin5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/tv_subtotal"
+                    android:text="Sub Total" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_font_size_medium"
+                    android:id="@+id/tv_SubTotal"
+                    android:layout_below="@id/tv_subtotal"
+                    android:text="Rp. 0"
+                    android:textAppearance="@style/textbold" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Checkout"
+                android:id="@+id/btCheckout"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

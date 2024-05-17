@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/mainbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_5sdp">
+
+        <CheckBox
+            android:id="@+id/cbItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/tvKeranjangGambar"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/contohgambar1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_margin10">
+
+            <TextView
+                android:id="@+id/tvKeranjangNama"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dp_margin10"
+                android:text="Pognae Orga Plus+ Hipseat Baby Carrier..."
+                android:textColor="@color/blackgray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/blackgray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="X"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:textColor="@color/blackgray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvKeranjangHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Rp.2.650.000"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvKeranjangHargaSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.2.650.000"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@color/graybackground"/>-->
+</LinearLayout>
